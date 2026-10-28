@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Strawberries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="stage">
+    <article class="card">
+      <img class="card__fruit" src="./assets/image.png" alt="Fresh strawberries on a leaf">
+
+      <button class="arrow arrow--left" aria-label="Previous">&larr;</button>
+      <button class="arrow arrow--right" aria-label="Next">&rarr;</button>
+
+      <h1 class="card__title">Strawberries</h1>
+      <p class="card__text">
+        The garden strawberry is a widely grown hybrid species of the genus Fragaria.
+        It is cultivated worldwide for its fruit.
+      </p>
+
+      <div class="info">
+        <div class="info__col">
+          <h2>Quantity</h2>
+          <div class="qty">
+            <button class="qty__btn" id="minus" aria-label="Less">&minus;</button>
+            <span id="qty">1</span>
+            <button class="qty__btn" id="plus" aria-label="More">+</button>
+          </div>
+        </div>
+
+        <div class="info__col">
+          <h2>Total Price</h2>
+          <p class="price">&#8377; <span id="price">7</span></p>
+        </div>
+
+        <div class="info__col">
+          <h2>Delivery</h2>
+          <p class="delivery">&#9992; In 60 mins</p>
+        </div>
+      </div>
+
+      <button class="cart">Add to cart</button>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
